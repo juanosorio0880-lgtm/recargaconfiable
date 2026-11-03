@@ -1,32 +1,35 @@
-<html lang="es"><head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Guía educativa sobre el cuidado y mantenimiento de extintores en casa. Sitio educativo sin fines comerciales ni captación de datos.">
-<meta name="author" content="David Steven Cuadros Serna">
+<meta name="description" content="Guía educativa sobre recargas de teléfono móvil. Sitio educativo sin fines comerciales ni captación de datos. recargaconfiable.online">
+<link rel="canonical" href="https://recargaconfiable.online/">
+<meta name="author" content="Luis Alejandro Arango Barrios">
 <meta name="robots" content="index, follow">
-<title>David Steven Cuadros Serna</title>
+<title>Luis Alejandro Arango Barrios</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Cormorant+Garamond:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
 :root {
-    --bg-primary: #0a0f1a;
-    --bg-secondary: #111827;
-    --bg-card: rgba(17, 24, 39, 0.75);
-    --bg-card-hover: rgba(30, 41, 59, 0.9);
-    --border-glow: rgba(59, 130, 246, 0.4);
-    --border-subtle: rgba(148, 163, 184, 0.12);
-    --accent-orange: #3b82f6;
-    --accent-red: #6366f1;
-    --accent-amber: #0ea5e9;
-    --accent-cyan: #22d3ee;
+    --bg-primary: #0c0a09;
+    --bg-secondary: #1c1917;
+    --bg-card: rgba(28, 25, 23, 0.82);
+    --bg-card-hover: rgba(41, 37, 36, 0.92);
+    --border-glow: rgba(212, 175, 55, 0.45);
+    --border-subtle: rgba(214, 211, 209, 0.10);
+    --accent-gold: #d4af37;
+    --accent-champagne: #e8d5a3;
+    --accent-amber: #c9a227;
+    --accent-bronze: #b8860b;
     --accent-emerald: #34d399;
-    --text-primary: #f1f5f9;
-    --text-secondary: #cbd5e1;
-    --text-muted: #94a3b8;
-    --gradient-1: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
-    --gradient-2: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
-    --gradient-3: linear-gradient(135deg, #22d3ee 0%, #34d399 100%);
+    --text-primary: #fafaf9;
+    --text-secondary: #e7e5e4;
+    --text-muted: #a8a29e;
+    --gradient-1: linear-gradient(135deg, #d4af37 0%, #c9a227 50%, #b8860b 100%);
+    --gradient-2: linear-gradient(135deg, #e8d5a3 0%, #d4af37 100%);
+    --gradient-3: linear-gradient(135deg, #c9a227 0%, #34d399 100%);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -39,9 +42,9 @@ body {
     color: var(--text-secondary);
     background-color: var(--bg-primary);
     background-image:
-        radial-gradient(circle at 15% 10%, rgba(59, 130, 246, 0.1) 0%, transparent 40%),
-        radial-gradient(circle at 85% 85%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.04) 0%, transparent 60%);
+        radial-gradient(circle at 12% 8%, rgba(212, 175, 55, 0.09) 0%, transparent 42%),
+        radial-gradient(circle at 88% 88%, rgba(184, 134, 11, 0.07) 0%, transparent 42%),
+        radial-gradient(circle at 50% 50%, rgba(232, 213, 163, 0.03) 0%, transparent 55%);
     background-attachment: fixed;
     min-height: 100vh;
     overflow-x: hidden;
@@ -52,12 +55,12 @@ body::before {
     position: fixed;
     inset: 0;
     background-image:
-        linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
+        linear-gradient(rgba(212, 175, 55, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 175, 55, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
     pointer-events: none;
     z-index: 0;
-    animation: gridDrift 60s linear infinite;
+    animation: gridDrift 70s linear infinite;
 }
 
 body::after {
@@ -65,39 +68,38 @@ body::after {
     position: fixed;
     inset: 0;
     background:
-        radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.15) 0%, transparent 8%),
-        radial-gradient(circle at 70% 60%, rgba(99, 102, 241, 0.12) 0%, transparent 8%),
-        radial-gradient(circle at 40% 80%, rgba(14, 165, 233, 0.1) 0%, transparent 6%);
-    filter: blur(40px);
+        radial-gradient(circle at 18% 28%, rgba(212, 175, 55, 0.12) 0%, transparent 9%),
+        radial-gradient(circle at 72% 62%, rgba(184, 134, 11, 0.10) 0%, transparent 9%),
+        radial-gradient(circle at 42% 78%, rgba(232, 213, 163, 0.08) 0%, transparent 7%);
+    filter: blur(48px);
     pointer-events: none;
     z-index: 0;
-    animation: orbFloat 20s ease-in-out infinite alternate;
+    animation: orbFloat 22s ease-in-out infinite alternate;
 }
 
 @keyframes gridDrift {
     0% { background-position: 0 0; }
-    100% { background-position: 50px 50px; }
+    100% { background-position: 48px 48px; }
 }
 
 @keyframes orbFloat {
     0% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(30px, -20px) scale(1.1); }
-    100% { transform: translate(-20px, 30px) scale(0.95); }
+    50% { transform: translate(28px, -18px) scale(1.08); }
+    100% { transform: translate(-18px, 28px) scale(0.96); }
 }
 
-/* Scanning line effect */
 .scan-line {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--accent-orange), transparent);
-    box-shadow: 0 0 12px var(--accent-orange);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+    box-shadow: 0 0 14px var(--accent-gold);
     z-index: 9999;
     pointer-events: none;
-    opacity: 0.4;
-    animation: scan 8s linear infinite;
+    opacity: 0.35;
+    animation: scan 9s linear infinite;
 }
 
 @keyframes scan {
@@ -107,9 +109,9 @@ body::after {
 
 /* ===== HEADER ===== */
 header {
-    background: rgba(12, 10, 9, 0.85);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    background: rgba(12, 10, 9, 0.88);
+    backdrop-filter: blur(22px) saturate(180%);
+    -webkit-backdrop-filter: blur(22px) saturate(180%);
     border-bottom: 1px solid var(--border-subtle);
     padding: 1rem 2rem;
     position: sticky;
@@ -128,28 +130,28 @@ header {
 }
 
 .logo {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.15rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
     letter-spacing: -0.01em;
     display: flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.75rem;
 }
 
 .logo-mark {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     background: var(--gradient-1);
     display: grid;
     place-items: center;
     font-family: 'JetBrains Mono', monospace;
-    color: white;
+    color: #0c0a09;
     font-weight: 700;
-    font-size: 0.85rem;
-    box-shadow: 0 0 24px rgba(59, 130, 246, 0.5);
+    font-size: 0.9rem;
+    box-shadow: 0 0 28px rgba(212, 175, 55, 0.55);
     position: relative;
 }
 
@@ -159,8 +161,8 @@ header {
     inset: -3px;
     border-radius: 50%;
     background: var(--gradient-1);
-    opacity: 0.4;
-    filter: blur(10px);
+    opacity: 0.35;
+    filter: blur(12px);
     z-index: -1;
 }
 
@@ -171,10 +173,10 @@ header {
 }
 
 .logo-text small {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     color: var(--text-muted);
     font-weight: 500;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     font-family: 'JetBrains Mono', monospace;
 }
@@ -182,7 +184,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 0.4rem;
+    gap: 0.35rem;
     flex-wrap: wrap;
 }
 
@@ -190,7 +192,7 @@ nav a {
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     padding: 0.55rem 1rem;
     border-radius: 10px;
     transition: all 0.25s ease;
@@ -200,16 +202,16 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent-orange);
-    background: rgba(59, 130, 246, 0.08);
+    color: var(--accent-gold);
+    background: rgba(212, 175, 55, 0.08);
     border-color: var(--border-glow);
 }
 
 nav a.active {
-    color: var(--accent-orange);
-    background: rgba(59, 130, 246, 0.12);
+    color: var(--accent-gold);
+    background: rgba(212, 175, 55, 0.12);
     border-color: var(--border-glow);
-    box-shadow: 0 0 12px rgba(59, 130, 246, 0.18);
+    box-shadow: 0 0 14px rgba(212, 175, 55, 0.2);
 }
 
 /* ===== HERO ===== */
@@ -225,11 +227,11 @@ nav a.active {
     align-items: center;
     gap: 1rem;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     color: var(--text-muted);
     margin-top: 2.2rem;
-    padding: 0.6rem 1.2rem;
-    background: rgba(0,0,0,0.3);
+    padding: 0.6rem 1.25rem;
+    background: rgba(0,0,0,0.35);
     border: 1px solid var(--border-subtle);
     border-radius: 10px;
     flex-wrap: wrap;
@@ -237,7 +239,7 @@ nav a.active {
 }
 
 .hero-meta span { display: inline-flex; align-items: center; gap: 0.4rem; }
-.hero-meta .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent-emerald); box-shadow: 0 0 6px var(--accent-emerald); }
+.hero-meta .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent-emerald); box-shadow: 0 0 8px var(--accent-emerald); }
 
 .tech-stats {
     display: grid;
@@ -247,22 +249,22 @@ nav a.active {
 }
 
 .stat-card {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.06) 0%, transparent 100%);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.07) 0%, transparent 100%);
     border: 1px solid var(--border-subtle);
-    padding: 1.2rem 1rem;
+    padding: 1.25rem 1rem;
     border-radius: 14px;
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .stat-card:hover {
-    border-color: var(--accent-orange);
+    border-color: var(--accent-gold);
     transform: translateY(-3px);
 }
 
 .stat-card .num {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.8rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.85rem;
     font-weight: 700;
     background: var(--gradient-1);
     -webkit-background-clip: text;
@@ -274,24 +276,24 @@ nav a.active {
 
 .stat-card .label {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     color: var(--text-muted);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
 }
 
 .hero::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center top, rgba(59, 130, 246, 0.18) 0%, transparent 60%);
+    background: radial-gradient(ellipse at center top, rgba(212, 175, 55, 0.16) 0%, transparent 58%);
     pointer-events: none;
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 900px;
+    max-width: 920px;
     margin: 0 auto;
 }
 
@@ -299,16 +301,16 @@ nav a.active {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(59, 130, 246, 0.08);
+    background: rgba(212, 175, 55, 0.08);
     border: 1px solid var(--border-glow);
-    padding: 0.5rem 1.1rem;
+    padding: 0.5rem 1.15rem;
     border-radius: 100px;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     margin-bottom: 1.8rem;
     font-weight: 500;
-    color: var(--accent-orange);
+    color: var(--accent-gold);
     font-family: 'JetBrains Mono', monospace;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
 }
 
 .badge::before {
@@ -316,22 +318,22 @@ nav a.active {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--accent-orange);
-    box-shadow: 0 0 8px var(--accent-orange);
+    background: var(--accent-gold);
+    box-shadow: 0 0 10px var(--accent-gold);
     animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(1.3); }
+    50% { opacity: 0.45; transform: scale(1.35); }
 }
 
 .hero h1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.1rem, 5.2vw, 3.6rem);
     font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
     margin-bottom: 1.4rem;
     color: var(--text-primary);
     background: linear-gradient(180deg, #fafaf9 0%, #a8a29e 100%);
@@ -348,11 +350,11 @@ nav a.active {
 }
 
 .hero p {
-    font-size: 1.15rem;
-    max-width: 720px;
+    font-size: 1.12rem;
+    max-width: 740px;
     margin: 0 auto;
     color: var(--text-muted);
-    line-height: 1.7;
+    line-height: 1.75;
 }
 
 /* ===== MAIN ===== */
@@ -368,14 +370,14 @@ main {
 .page.active { display: block; }
 
 @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(15px); }
+    from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
 section {
     background: var(--bg-card);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     padding: 2.5rem;
     margin-bottom: 1.8rem;
     border-radius: 20px;
@@ -400,17 +402,17 @@ section::before {
 
 section:hover {
     border-color: var(--border-glow);
-    box-shadow: 0 4px 24px -8px rgba(59, 130, 246, 0.15);
+    box-shadow: 0 6px 28px -10px rgba(212, 175, 55, 0.18);
 }
 
-section:hover::before { opacity: 0.6; }
+section:hover::before { opacity: 0.7; }
 
 h2 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     color: var(--text-primary);
-    font-size: 1.75rem;
+    font-size: 1.85rem;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
     margin-bottom: 1.3rem;
     display: flex;
     align-items: center;
@@ -420,16 +422,16 @@ h2 {
 h2::before {
     content: '';
     width: 4px;
-    height: 26px;
+    height: 28px;
     background: var(--gradient-1);
     border-radius: 2px;
-    box-shadow: 0 0 10px var(--accent-orange);
+    box-shadow: 0 0 12px var(--accent-gold);
 }
 
 h3 {
-    font-family: 'Space Grotesk', sans-serif;
-    color: var(--accent-orange);
-    font-size: 1.18rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--accent-gold);
+    font-size: 1.22rem;
     font-weight: 600;
     margin-top: 1.6rem;
     margin-bottom: 0.7rem;
@@ -454,36 +456,36 @@ em { color: var(--text-muted); }
     margin: 1.5rem 0;
     border-radius: 14px;
     border: 1px solid;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
 }
 
 .highlight-box {
-    background: rgba(14, 165, 233, 0.08);
-    border-color: rgba(14, 165, 233, 0.25);
-    border-left: 3px solid var(--accent-amber);
+    background: rgba(212, 175, 55, 0.07);
+    border-color: rgba(212, 175, 55, 0.28);
+    border-left: 3px solid var(--accent-gold);
 }
 
-.highlight-box strong { color: var(--accent-amber); }
+.highlight-box strong { color: var(--accent-gold); }
 
 .info-box {
-    background: rgba(6, 182, 212, 0.06);
-    border-color: rgba(6, 182, 212, 0.2);
-    border-left: 3px solid var(--accent-cyan);
+    background: rgba(232, 213, 163, 0.05);
+    border-color: rgba(232, 213, 163, 0.22);
+    border-left: 3px solid var(--accent-champagne);
 }
 
-.info-box strong { color: var(--accent-cyan); }
+.info-box strong { color: var(--accent-champagne); }
 
 .warning-box {
-    background: rgba(99, 102, 241, 0.06);
-    border-color: rgba(99, 102, 241, 0.25);
-    border-left: 3px solid var(--accent-red);
+    background: rgba(184, 134, 11, 0.07);
+    border-color: rgba(184, 134, 11, 0.28);
+    border-left: 3px solid var(--accent-bronze);
 }
 
-.warning-box strong { color: var(--accent-red); }
+.warning-box strong { color: var(--accent-bronze); }
 
 .responsable-box {
-    background: rgba(16, 185, 129, 0.06);
-    border-color: rgba(16, 185, 129, 0.25);
+    background: rgba(52, 211, 153, 0.05);
+    border-color: rgba(52, 211, 153, 0.22);
     border-left: 3px solid var(--accent-emerald);
 }
 
@@ -495,7 +497,7 @@ em { color: var(--text-muted); }
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; margin: 2rem 0; }
 
 .service-card {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(99, 102, 241, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(184, 134, 11, 0.04) 100%);
     border: 1px solid var(--border-subtle);
     padding: 2rem 1.5rem;
     border-radius: 18px;
@@ -507,19 +509,19 @@ em { color: var(--text-muted); }
 
 .service-card:hover {
     transform: translateY(-4px);
-    border-color: var(--accent-orange);
-    box-shadow: 0 8px 30px -10px var(--accent-orange);
+    border-color: var(--accent-gold);
+    box-shadow: 0 10px 32px -12px var(--accent-gold);
 }
 
 .service-card .icon {
     font-size: 2.2rem;
     margin-bottom: 0.8rem;
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 62px;
+    height: 62px;
+    line-height: 62px;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border-subtle);
 }
 
@@ -527,7 +529,7 @@ em { color: var(--text-muted); }
 .service-card p { text-align: center; color: var(--text-muted); font-size: 0.95rem; }
 
 .type-card {
-    background: linear-gradient(180deg, rgba(59, 130, 246, 0.08) 0%, transparent 100%);
+    background: linear-gradient(180deg, rgba(212, 175, 55, 0.09) 0%, transparent 100%);
     border: 1px solid var(--border-subtle);
     padding: 1.4rem 1rem;
     border-radius: 14px;
@@ -536,29 +538,29 @@ em { color: var(--text-muted); }
 }
 
 .type-card:hover {
-    border-color: var(--accent-orange);
+    border-color: var(--accent-gold);
     transform: translateY(-3px);
 }
 
 .type-card .badge-letter {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
     background: var(--gradient-1);
-    color: white;
+    color: #0c0a09;
     border-radius: 50%;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     margin-bottom: 0.7rem;
-    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 0 18px rgba(212, 175, 55, 0.45);
 }
 
 .type-card h4 {
     color: var(--text-primary);
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
     margin-bottom: 0.4rem;
 }
 
@@ -570,7 +572,7 @@ em { color: var(--text-muted); }
 }
 
 .grid-2 .card {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(99, 102, 241, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(184, 134, 11, 0.04) 100%);
     border: 1px solid var(--border-subtle);
     padding: 2rem;
     border-radius: 18px;
@@ -580,22 +582,22 @@ em { color: var(--text-muted); }
 }
 
 .grid-2 .card:hover { transform: translateY(-3px); border-color: var(--border-glow); }
-.grid-2 .card h3 { margin-top: 0; color: var(--text-primary); font-size: 1.3rem; }
+.grid-2 .card h3 { margin-top: 0; color: var(--text-primary); font-size: 1.35rem; }
 
 /* ===== BREADCRUMB ===== */
 .breadcrumb {
-    background: rgba(59, 130, 246, 0.05);
+    background: rgba(212, 175, 55, 0.05);
     border: 1px solid var(--border-subtle);
     padding: 0.6rem 1.1rem;
     border-radius: 10px;
     margin-bottom: 1.5rem;
-    font-size: 0.85rem;
+    font-size: 0.84rem;
     color: var(--text-muted);
     font-family: 'JetBrains Mono', monospace;
 }
 
 .breadcrumb a {
-    color: var(--accent-orange);
+    color: var(--accent-gold);
     text-decoration: none;
     cursor: pointer;
 }
@@ -604,10 +606,10 @@ em { color: var(--text-muted); }
 
 /* ===== TIPS ===== */
 .tip {
-    background: linear-gradient(90deg, rgba(59, 130, 246, 0.06) 0%, transparent 100%);
+    background: linear-gradient(90deg, rgba(212, 175, 55, 0.07) 0%, transparent 100%);
     border: 1px solid var(--border-subtle);
-    border-left: 3px solid var(--accent-orange);
-    padding: 1rem 1.2rem;
+    border-left: 3px solid var(--accent-gold);
+    padding: 1rem 1.25rem;
     margin: 0.7rem 0;
     border-radius: 10px;
     transition: all 0.25s ease;
@@ -615,14 +617,14 @@ em { color: var(--text-muted); }
 }
 
 .tip:hover {
-    background: linear-gradient(90deg, rgba(59, 130, 246, 0.1) 0%, transparent 100%);
+    background: linear-gradient(90deg, rgba(212, 175, 55, 0.11) 0%, transparent 100%);
     transform: translateX(4px);
-    border-left-color: var(--accent-amber);
+    border-left-color: var(--accent-champagne);
 }
 
-.tip strong { color: var(--accent-orange); }
+.tip strong { color: var(--accent-gold); }
 
-/* PASS Steps */
+/* PASS Steps adapted */
 .pass-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -631,7 +633,7 @@ em { color: var(--text-muted); }
 }
 
 .pass-step {
-    background: linear-gradient(180deg, rgba(99, 102, 241, 0.08) 0%, rgba(59, 130, 246, 0.05) 100%);
+    background: linear-gradient(180deg, rgba(212, 175, 55, 0.09) 0%, rgba(184, 134, 11, 0.05) 100%);
     border: 1px solid var(--border-subtle);
     padding: 1.5rem 1rem;
     border-radius: 14px;
@@ -641,7 +643,7 @@ em { color: var(--text-muted); }
 }
 
 .pass-step:hover {
-    border-color: var(--accent-red);
+    border-color: var(--accent-bronze);
     transform: translateY(-3px);
 }
 
@@ -650,8 +652,8 @@ em { color: var(--text-muted); }
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--accent-red);
-    color: white;
+    background: var(--accent-bronze);
+    color: #0c0a09;
     width: 26px;
     height: 26px;
     border-radius: 50%;
@@ -659,21 +661,21 @@ em { color: var(--text-muted); }
     font-weight: 700;
     font-size: 0.85rem;
     line-height: 26px;
-    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 12px rgba(184, 134, 11, 0.5);
 }
 
 .pass-step .letter {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 2rem;
     font-weight: 700;
-    color: var(--accent-orange);
+    color: var(--accent-gold);
     margin-bottom: 0.4rem;
 }
 
 .pass-step h4 {
     color: var(--text-primary);
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 0.95rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.98rem;
     margin-bottom: 0.4rem;
 }
 
@@ -686,8 +688,8 @@ em { color: var(--text-muted); }
 
 /* ===== FOOTER ===== */
 footer {
-    background: rgba(8, 6, 5, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(8, 6, 5, 0.96);
+    backdrop-filter: blur(12px);
     color: var(--text-secondary);
     padding: 3.5rem 2rem 1.5rem;
     margin-top: 4rem;
@@ -705,8 +707,8 @@ footer::before {
     width: 60%;
     max-width: 600px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--accent-orange), transparent);
-    opacity: 0.5;
+    background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+    opacity: 0.55;
 }
 
 .footer-container {
@@ -722,8 +724,8 @@ footer h4 {
     margin-bottom: 1rem;
     font-size: 0.95rem;
     font-weight: 600;
-    font-family: 'Space Grotesk', sans-serif;
-    letter-spacing: 0.02em;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
@@ -743,10 +745,10 @@ footer a {
     transition: color 0.25s ease;
 }
 
-footer a:hover { color: var(--accent-orange); }
+footer a:hover { color: var(--accent-gold); }
 
 .responsable-footer {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(99, 102, 241, 0.05));
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06), rgba(184, 134, 11, 0.05));
     border: 1px solid var(--border-glow);
     padding: 1.5rem;
     border-radius: 18px;
@@ -759,15 +761,15 @@ footer a:hover { color: var(--accent-orange); }
     top: -10px;
     left: 1.5rem;
     background: var(--bg-primary);
-    color: var(--accent-orange);
+    color: var(--accent-gold);
     padding: 0 0.6rem;
     font-size: 0.7rem;
     font-family: 'JetBrains Mono', monospace;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
 }
 
-.responsable-footer h4 { color: var(--accent-orange); }
+.responsable-footer h4 { color: var(--accent-gold); }
 .responsable-footer strong { color: var(--text-primary); }
 
 .footer-bottom {
@@ -786,35 +788,33 @@ footer a:hover { color: var(--accent-orange); }
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .hero { padding: 4rem 1.5rem 3rem; }
-    .hero h1 { font-size: 1.8rem; }
+    .hero h1 { font-size: 1.85rem; }
     .hero p { font-size: 1rem; }
     .grid-2, .grid-3, .grid-4, .pass-grid, .tech-stats { grid-template-columns: 1fr 1fr; }
     .footer-container { grid-template-columns: 1fr; }
     nav ul { gap: 0.3rem; justify-content: center; }
-    nav a { font-size: 0.82rem; padding: 0.4rem 0.7rem; }
+    nav a { font-size: 0.8rem; padding: 0.4rem 0.7rem; }
     .header-container { flex-direction: column; }
     section { padding: 1.6rem; }
-    h2 { font-size: 1.35rem; }
+    h2 { font-size: 1.4rem; }
     main { padding: 2rem 1.2rem 3rem; }
-    .logo { font-size: 1rem; }
-    .logo-mark { width: 36px; height: 36px; }
+    .logo { font-size: 1.05rem; }
+    .logo-mark { width: 38px; height: 38px; }
     .scan-line { display: none; }
 }
 
-/* Hover glow on logo mark */
 .logo-mark { animation: logoPulse 4s ease-in-out infinite; }
 
 @keyframes logoPulse {
-    0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.45); }
-    50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.7), 0 0 50px rgba(99, 102, 241, 0.3); }
+    0%, 100% { box-shadow: 0 0 22px rgba(212, 175, 55, 0.5); }
+    50% { box-shadow: 0 0 34px rgba(212, 175, 55, 0.75), 0 0 55px rgba(184, 134, 11, 0.28); }
 }
 
-/* Cursor blink in hero */
 .cursor {
     display: inline-block;
     width: 3px;
     height: 1em;
-    background: var(--accent-orange);
+    background: var(--accent-gold);
     margin-left: 4px;
     vertical-align: middle;
     animation: blink 1s step-end infinite;
@@ -825,18 +825,18 @@ footer a:hover { color: var(--accent-orange); }
 }
 
 ::selection {
-    background: rgba(59, 130, 246, 0.3);
+    background: rgba(212, 175, 55, 0.28);
     color: var(--text-primary);
 }
 
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--bg-primary); }
 ::-webkit-scrollbar-thumb {
-    background: rgba(59, 130, 246, 0.25);
+    background: rgba(212, 175, 55, 0.28);
     border-radius: 12px;
     border: 2px solid var(--bg-primary);
 }
-::-webkit-scrollbar-thumb:hover { background: rgba(59, 130, 246, 0.45); }
+::-webkit-scrollbar-thumb:hover { background: rgba(212, 175, 55, 0.48); }
 </style>
 </head>
 <body>
@@ -846,9 +846,9 @@ footer a:hover { color: var(--accent-orange); }
 <header>
     <div class="header-container">
         <div class="logo">
-            <div class="logo-mark">DS</div>
+            <div class="logo-mark">LA</div>
             <div class="logo-text">
-                <span>David Steven Cuadros Serna</span>
+                <span>Luis Alejandro Arango Barrios</span>
                 <small>Guía Educativa</small>
             </div>
         </div>
@@ -865,18 +865,12 @@ footer a:hover { color: var(--accent-orange); }
 </header>
 
 <!-- ====================== INICIO ====================== -->
-<div class=“cf-turnstile”
-
-     data-sitekey=“0x4AAAAAAFxuVR5IRJqpCm84>
-
-</div>
-    
-    <div id="page-inicio" class="page active">
+<div id="page-inicio" class="page active">
     <div class="hero">
         <div class="hero-content">
             <span class="badge">Sitio educativo · Sin fines comerciales</span>
-            <h1>Cuidado y Mantenimiento de <span class="accent">Extintores en Casa</span><span class="cursor"></span></h1>
-            <p>Guía educativa con información práctica para conocer, conservar e inspeccionar correctamente el extintor de su hogar, garantizando que esté siempre listo para una emergencia.</p>
+            <h1>Guía de <span class="accent">Recargas de Teléfono</span><span class="cursor"></span></h1>
+            <p>Información práctica y clara para entender cómo realizar, verificar y proteger sus recargas de saldo móvil, evitando errores comunes y manteniendo el control sobre su comunicación diaria.</p>
             <div class="hero-meta">
                 <span><span class="dot"></span> SISTEMA EDUCATIVO ACTIVO</span>
                 <span>v2.0</span>
@@ -885,19 +879,19 @@ footer a:hover { color: var(--accent-orange); }
             <div class="tech-stats">
                 <div class="stat-card">
                     <div class="num">04</div>
-                    <div class="label">Tipos de Fuego</div>
+                    <div class="label">Canales de Recarga</div>
                 </div>
                 <div class="stat-card">
-                    <div class="num">P.A.S.S.</div>
-                    <div class="label">Técnica Universal</div>
+                    <div class="num">24/7</div>
+                    <div class="label">Disponibilidad</div>
                 </div>
                 <div class="stat-card">
-                    <div class="num">12</div>
-                    <div class="label">Meses por Recarga</div>
+                    <div class="num">SMS</div>
+                    <div class="label">Confirmación</div>
                 </div>
                 <div class="stat-card">
                     <div class="num">123</div>
-                    <div class="label">Línea Emergencia</div>
+                    <div class="label">Línea de Ayuda</div>
                 </div>
             </div>
         </div>
@@ -906,134 +900,134 @@ footer a:hover { color: var(--accent-orange); }
     <main>
         <section>
             <h2>Propósito de esta Guía</h2>
-            <p>Este sitio web ha sido creado con un <strong>propósito netamente educativo e informativo</strong>. Su objetivo principal es entregar a los hogares colombianos información clara y práctica sobre el cuidado, mantenimiento e inspección de los extintores domésticos, contribuyendo a fortalecer la cultura de prevención y seguridad ante incendios en el ámbito familiar.</p>
+            <p>Este sitio web ha sido creado con un <strong>propósito netamente educativo e informativo</strong>. Su objetivo principal es entregar a los usuarios colombianos información clara y práctica sobre cómo realizar, verificar y cuidar las recargas de teléfono móvil, contribuyendo a una mejor gestión del saldo y a la prevención de errores o fraudes en el ámbito cotidiano.</p>
 
             <div class="highlight-box">
                 <strong>¿Por qué se realiza esta guía educativa?</strong>
-                <p style="margin-top: 0.6rem;">En Colombia, una gran parte de los incendios domésticos se podrían controlar en sus primeros minutos si los hogares contaran con un extintor en buen estado y supieran cómo usarlo. Sin embargo, muchas familias adquieren un extintor y nunca vuelven a revisarlo, lo cual lo deja inservible cuando más se necesita. Esta guía busca cerrar esa brecha de conocimiento con información gratuita, práctica y verificable, contribuyendo a la seguridad familiar y a la prevención de tragedias evitables.</p>
+                <p style="margin-top: 0.6rem;">En Colombia, millones de personas dependen diariamente del saldo de su línea móvil para comunicarse, trabajar y resolver asuntos familiares. Sin embargo, muchos usuarios desconocen los canales seguros, las diferencias entre operadores, los tiempos de acreditación o las señales de alerta ante posibles estafas. Esta guía busca cerrar esa brecha de conocimiento con información gratuita, práctica y verificable, contribuyendo a una experiencia de recarga más segura y confiable.</p>
             </div>
 
             <p><strong>Este sitio NO realiza:</strong></p>
             <ul>
                 <li>Captación, recolección o almacenamiento de datos personales de los visitantes.</li>
-                <li>Ventas de extintores, recargas, productos ni servicios.</li>
+                <li>Ventas de recargas, paquetes de datos, productos ni servicios.</li>
                 <li>Procesos de afiliación, suscripción o registro de usuarios.</li>
                 <li>Transacciones financieras de ningún tipo.</li>
-                <li>Recomendación de marcas o empresas comerciales.</li>
+                <li>Recomendación de marcas, operadores o empresas comerciales específicas.</li>
             </ul>
         </section>
 
         <section>
-            <h2>¿Por qué Tener un Extintor en Casa?</h2>
-            <p>El extintor es una de las herramientas más eficaces para controlar un incendio en sus primeros minutos. Su correcto funcionamiento puede marcar la diferencia entre un susto controlado y una pérdida total. Tenerlo en casa, ubicado en un lugar accesible y en buen estado, hace parte fundamental de un plan básico de seguridad para cualquier familia.</p>
+            <h2>¿Por qué Entender las Recargas?</h2>
+            <p>La recarga de saldo es la forma más común de mantener activa una línea prepago. Conocer los métodos correctos, los tiempos de acreditación y las buenas prácticas reduce errores, evita dobles cobros y protege al usuario frente a intentos de fraude. Una recarga bien hecha garantiza continuidad en la comunicación cuando más se necesita.</p>
             <div class="grid-3">
                 <div class="service-card">
-                    <div class="icon">🔥</div>
-                    <h3>Prevención</h3>
-                    <p>Un extintor en buen estado permite controlar conatos de incendio antes de que se conviertan en catástrofes.</p>
+                    <div class="icon">📱</div>
+                    <h3>Continuidad</h3>
+                    <p>Mantener el saldo al día evita cortes de servicio en momentos críticos de comunicación.</p>
                 </div>
                 <div class="service-card">
-                    <div class="icon">🏠</div>
-                    <h3>Protección del Hogar</h3>
-                    <p>Resguarda a su familia, mascotas y bienes materiales frente a una emergencia inesperada.</p>
+                    <div class="icon">🔒</div>
+                    <h3>Seguridad</h3>
+                    <p>Conocer los canales oficiales y las señales de alerta protege el dinero y los datos personales.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon">⏱️</div>
-                    <h3>Respuesta Rápida</h3>
-                    <p>Permite reaccionar en los primeros minutos, que son los más críticos durante un incendio doméstico.</p>
+                    <h3>Control</h3>
+                    <p>Verificar la acreditación y el historial permite llevar un registro claro del gasto en comunicaciones.</p>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>Tipos de Extintores y Sus Usos</h2>
-            <p>Existen diferentes tipos de extintores diseñados para combatir distintas clases de fuego. Conocerlos es fundamental para elegir el adecuado para su hogar.</p>
+            <h2>Tipos de Canales de Recarga</h2>
+            <p>Existen diferentes formas de abonar saldo a una línea móvil. Conocerlas ayuda a elegir la más conveniente según el momento, el monto y la disponibilidad de medios de pago.</p>
             <div class="grid-4">
                 <div class="type-card">
-                    <div class="badge-letter">A</div>
-                    <h4>Sólidos</h4>
-                    <p>Madera, papel, cartón, telas y plásticos.</p>
+                    <div class="badge-letter">1</div>
+                    <h4>App Oficial</h4>
+                    <p>Aplicaciones del operador con tarjeta o saldo.</p>
                 </div>
                 <div class="type-card">
-                    <div class="badge-letter">B</div>
-                    <h4>Líquidos</h4>
-                    <p>Gasolina, aceites, alcohol, pinturas.</p>
+                    <div class="badge-letter">2</div>
+                    <h4>USSD / Código</h4>
+                    <p>Códigos cortos marcados desde el mismo teléfono.</p>
                 </div>
                 <div class="type-card">
-                    <div class="badge-letter">C</div>
-                    <h4>Eléctricos</h4>
-                    <p>Equipos energizados y tableros eléctricos.</p>
+                    <div class="badge-letter">3</div>
+                    <h4>Puntos Físicos</h4>
+                    <p>Tiendas, supermercados y puntos autorizados.</p>
                 </div>
                 <div class="type-card">
-                    <div class="badge-letter">K</div>
-                    <h4>Cocina</h4>
-                    <p>Aceites y grasas vegetales o animales.</p>
+                    <div class="badge-letter">4</div>
+                    <h4>Portal Web</h4>
+                    <p>Sitios oficiales del operador en línea.</p>
                 </div>
             </div>
             <div class="info-box">
-                <strong>Recomendación para el hogar:</strong> el extintor de polvo químico seco <strong>multipropósito ABC</strong> es generalmente el más recomendado para uso doméstico, ya que cubre los tres tipos de fuego más comunes en una casa. Para la cocina, se recomienda complementar con uno tipo K.
+                <strong>Recomendación general:</strong> priorice siempre los canales oficiales del operador. Evite enlaces enviados por mensajes de texto o redes sociales que soliciten datos personales o claves. La recarga legítima nunca pide la contraseña completa de su cuenta ni códigos de verificación a terceros.
             </div>
         </section>
 
         <section>
-            <h2>Cómo Cuidar y Mantener su Extintor</h2>
-            <div class="tip"><strong>1. Ubicación adecuada:</strong> instálelo en un lugar visible, accesible y a una altura no superior a 1.50 metros del piso. Lejos de fuentes de calor directo y de la humedad.</div>
-            <div class="tip"><strong>2. Inspección visual mensual:</strong> revise una vez al mes que la aguja del manómetro esté en la zona verde, que el sello no esté roto y que el cilindro no presente óxido, abolladuras o fugas.</div>
-            <div class="tip"><strong>3. Verifique la fecha:</strong> revise la fecha de fabricación, recarga y vencimiento. La mayoría de los extintores domésticos requieren recarga anual.</div>
-            <div class="tip"><strong>4. Manguera y boquilla limpias:</strong> asegúrese de que la manguera no esté obstruida, agrietada o suelta. Limpie la boquilla periódicamente para evitar acumulación de polvo o insectos.</div>
-            <div class="tip"><strong>5. Recarga profesional:</strong> al menos una vez al año, lleve el extintor a un proveedor certificado para mantenimiento y recarga. Nunca intente recargarlo usted mismo.</div>
-            <div class="tip"><strong>6. Mueva el polvo (PQS):</strong> en extintores de polvo químico seco, gírelos o invírtalos suavemente cada uno o dos meses para evitar que el polvo se compacte en el fondo.</div>
-            <div class="tip"><strong>7. Mantenga el sello intacto:</strong> si el sello de seguridad está roto sin que se haya usado el extintor, llévelo inmediatamente a inspección.</div>
-            <div class="tip"><strong>8. Etiqueta legible:</strong> conserve la etiqueta de instrucciones de uso visible y legible. Sustitúyala si está deteriorada.</div>
+            <h2>Cómo Realizar y Verificar una Recarga</h2>
+            <div class="tip"><strong>1. Elija un canal confiable:</strong> use la aplicación oficial del operador, el portal web seguro o un punto de venta autorizado. Desconfíe de mensajes que ofrezcan “recargas con descuento” a través de enlaces desconocidos.</div>
+            <div class="tip"><strong>2. Confirme el número de destino:</strong> verifique dígito a dígito el número al que va dirigida la recarga. Un error de un solo dígito puede enviar el saldo a otra persona.</div>
+            <div class="tip"><strong>3. Revise el monto y el medio de pago:</strong> confirme el valor exacto y el método de pago antes de autorizar. Guarde el comprobante o captura de pantalla.</div>
+            <div class="tip"><strong>4. Espere la confirmación:</strong> la mayoría de las recargas se acreditan en segundos o pocos minutos. Si no llega el SMS de confirmación, consulte el saldo con el código del operador.</div>
+            <div class="tip"><strong>5. Verifique el saldo:</strong> marque el código de consulta de saldo de su operador o revise el panel de la aplicación oficial para confirmar que el dinero quedó registrado.</div>
+            <div class="tip"><strong>6. Conserve el comprobante:</strong> mantenga el recibo digital o físico durante al menos 48 horas por si necesita reclamar o verificar la transacción.</div>
+            <div class="tip"><strong>7. Evite compartir códigos OTP:</strong> nunca envíe códigos de un solo uso ni claves que lleguen por SMS a terceros que digan “ayudar” a procesar la recarga.</div>
+            <div class="tip"><strong>8. Actualice la app:</strong> mantenga la aplicación del operador y el sistema del teléfono actualizados para reducir riesgos de seguridad.</div>
         </section>
 
         <section>
-            <h2>Cómo Usar un Extintor: Técnica P.A.S.S.</h2>
-            <p>La técnica universal P.A.S.S. (en inglés: <em>Pull, Aim, Squeeze, Sweep</em>) es la forma correcta de operar un extintor portátil en una emergencia. Aprenderla puede salvar vidas.</p>
+            <h2>Pasos Clave para una Recarga Segura</h2>
+            <p>Una secuencia sencilla y ordenada ayuda a evitar errores y a mantener el control del proceso. Estos cuatro pasos resumen la práctica recomendada:</p>
             <div class="pass-grid">
                 <div class="pass-step">
                     <span class="step-num">1</span>
-                    <div class="letter">P</div>
-                    <h4>Pull / Hale</h4>
-                    <p>Hale el pasador de seguridad para liberar el gatillo.</p>
+                    <div class="letter">V</div>
+                    <h4>Verifique</h4>
+                    <p>Confirme número, monto y canal oficial antes de pagar.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">2</span>
                     <div class="letter">A</div>
-                    <h4>Aim / Apunte</h4>
-                    <p>Apunte la boquilla a la base del fuego, no a las llamas.</p>
+                    <h4>Autorice</h4>
+                    <p>Complete el pago solo en plataformas legítimas y seguras.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">3</span>
-                    <div class="letter">S</div>
-                    <h4>Squeeze / Presione</h4>
-                    <p>Presione el gatillo de manera firme y sostenida.</p>
+                    <div class="letter">C</div>
+                    <h4>Confirme</h4>
+                    <p>Espere el SMS o la notificación de acreditación exitosa.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">4</span>
-                    <div class="letter">S</div>
-                    <h4>Sweep / Barra</h4>
-                    <p>Mueva la boquilla de lado a lado cubriendo toda la base.</p>
+                    <div class="letter">R</div>
+                    <h4>Revise</h4>
+                    <p>Consulte el saldo y archive el comprobante por seguridad.</p>
                 </div>
             </div>
             <div class="warning-box">
-                <strong>¡Importante!</strong> Antes de combatir cualquier fuego, asegúrese de tener una vía de escape detrás de usted. Si el fuego crece o el humo es denso, evacúe inmediatamente y llame a la línea de emergencia <strong>123</strong> o a Bomberos. Su vida vale más que cualquier bien material.
+                <strong>¡Importante!</strong> Si recibe un mensaje que pide “confirmar recarga” enviando un código, o que ofrece devolver dinero a cambio de datos, no responda. Las estafas de recarga suelen usar urgencia y presión. En caso de duda, comuníquese directamente con el operador a través de sus canales oficiales o con la línea de ayuda ciudadana <strong>123</strong>.
             </div>
         </section>
 
         <section>
             <h2>Recomendaciones Generales de Seguridad</h2>
             <ol>
-                <li>Tenga al menos un extintor multipropósito ABC en su hogar; idealmente uno por piso.</li>
-                <li>Asegúrese de que todos los miembros del hogar (excepto niños pequeños) sepan dónde está y cómo usarlo.</li>
-                <li>Realice un simulacro familiar al menos una vez al año.</li>
-                <li>Mantenga libres las rutas de evacuación y conozca al menos dos salidas de su vivienda.</li>
-                <li>Instale detectores de humo y reemplace sus baterías periódicamente.</li>
-                <li>Apague electrodomésticos cuando no estén en uso y revise periódicamente sus instalaciones eléctricas y de gas.</li>
-                <li>Tenga visibles los teléfonos de emergencia: <strong>123</strong> (línea única), <strong>119</strong> (Bomberos en algunas ciudades).</li>
+                <li>Utilice preferentemente las aplicaciones o portales oficiales de su operador de telefonía.</li>
+                <li>Active notificaciones de saldo y movimientos para detectar recargas o débitos inesperados.</li>
+                <li>No comparta códigos de verificación ni capturas de pantalla con datos sensibles.</li>
+                <li>Revise periódicamente el historial de recargas en la app del operador.</li>
+                <li>Prefiera conexiones Wi-Fi confiables o datos móviles al realizar pagos en línea.</li>
+                <li>Mantenga el sistema operativo y las aplicaciones del teléfono actualizados.</li>
+                <li>En caso de problemas con una recarga, conserve el comprobante y contacte al operador o a la entidad de pago con el número de referencia.</li>
             </ol>
             <div class="info-box">
-                <strong>Importante:</strong> Esta guía constituye orientación general de carácter educativo. No reemplaza la asesoría técnica especializada ni el mantenimiento profesional certificado. Para inspecciones, recargas o instalaciones, acuda a empresas avaladas por la autoridad competente y conforme a la normativa NFPA o NTC aplicable.
+                <strong>Importante:</strong> Esta guía constituye orientación general de carácter educativo. No reemplaza la información oficial de los operadores. Para consultas específicas sobre su línea o recargas, acuda a los canales de atención oficiales del operador correspondiente.
             </div>
         </section>
     </main>
@@ -1045,17 +1039,17 @@ footer a:hover { color: var(--accent-orange); }
         <section>
             <div class="breadcrumb"><a href="#inicio">~/inicio</a> &gt; sobre-nosotros</div>
             <h2>Sobre Nosotros</h2>
-            <p>Somos una iniciativa educativa independiente que nace en la ciudad de <strong>Barranquilla, Atlántico (Colombia)</strong>, con el firme propósito de poner a disposición de los hogares colombianos información clara, práctica y verificable sobre el cuidado y mantenimiento de extintores en casa, fomentando una cultura de prevención y seguridad familiar.</p>
-            <p>Esta guía surge de la observación de que muchas familias adquieren un extintor por obligación o sugerencia, pero nunca vuelven a revisarlo, desconociendo que un extintor mal mantenido puede no funcionar cuando realmente se necesita.</p>
+            <p>Somos una iniciativa educativa independiente que nace en la ciudad de <strong>Barranquilla, Atlántico (Colombia)</strong>, con el firme propósito de poner a disposición de los usuarios colombianos información clara, práctica y verificable sobre las recargas de teléfono móvil, fomentando una cultura de uso seguro y responsable del saldo prepago.</p>
+            <p>Esta guía surge de la observación de que muchas personas realizan recargas de forma rutinaria sin conocer los canales más seguros, los tiempos de acreditación o las señales de posibles intentos de fraude, lo que puede generar pérdidas de dinero o interrupciones innecesarias del servicio.</p>
 
             <h3>¿Quiénes somos?</h3>
-            <p>Detrás de este sitio se encuentra <strong>David Steven Cuadros Serna</strong>, ciudadano colombiano residente en Barranquilla (Atlántico), quien de manera personal y voluntaria ha decidido divulgar contenidos educativos sobre el cuidado de extintores domésticos, sin perseguir fines de lucro y sin ofrecer ningún tipo de servicio comercial.</p>
+            <p>Detrás de este sitio se encuentra <strong>Luis Alejandro Arango Barrios</strong>, ciudadano colombiano residente en Barranquilla (Atlántico), quien de manera personal y voluntaria ha decidido divulgar contenidos educativos sobre el uso y la protección de las recargas de teléfono, sin perseguir fines de lucro y sin ofrecer ningún tipo de servicio comercial.</p>
 
             <h3>Nuestro compromiso</h3>
             <ul>
-                <li>Ofrecer información de carácter educativo, con enfoque ciudadano y familiar.</li>
+                <li>Ofrecer información de carácter educativo, con enfoque ciudadano y práctico.</li>
                 <li>Mantener un sitio totalmente gratuito, sin publicidad de terceros y sin captación de datos personales.</li>
-                <li>Promover una cultura de prevención y seguridad ante incendios.</li>
+                <li>Promover hábitos seguros al momento de abonar saldo a líneas móviles.</li>
                 <li>Actualizar periódicamente la información para reflejar buenas prácticas vigentes.</li>
                 <li>Respetar plenamente la privacidad de los visitantes.</li>
             </ul>
@@ -1063,17 +1057,17 @@ footer a:hover { color: var(--accent-orange); }
             <div class="responsable-box">
                 <strong>Identificación del responsable del sitio:</strong>
                 <p style="margin-top: 0.6rem;">
-                    <strong>Nombre:</strong> David Steven Cuadros Serna<br>
-                    <strong>NIT:</strong> 1.037.615.503-1<br>
-                    <strong>Dirección:</strong> Calle 74 #65-66, Barranquilla, Atlántico, Colombia<br>
-                    <strong>Correo electrónico:</strong> wilsonardila1090@gmail.com<br>
-                    <strong>Teléfono:</strong> 3150011973<br>
+                    <strong>Nombre:</strong> Luis Alejandro Arango Barrios<br>
+                    <strong>NIT:</strong> 8.743.951-1<br>
+                    <strong>Dirección:</strong> Cra 26a #76-42, Barranquilla, Atlántico, Colombia<br>
+                    <strong>Correo electrónico:</strong> luis.alejandroarango17@gmail.com<br>
+                    <strong>Teléfono:</strong> 3505348622<br>
                     <strong>Carácter:</strong> Anunciante y responsable del tratamiento de datos
                 </p>
             </div>
 
             <h3>Naturaleza del sitio</h3>
-            <p>Este sitio web tiene una naturaleza estrictamente educativa. No constituye una actividad mercantil ni representa a ninguna empresa, marca, entidad pública, fabricante de extintores o proveedor de servicios de mantenimiento. Toda la información publicada es de libre consulta y su único fin es contribuir a la seguridad doméstica y a la prevención de incendios.</p>
+            <p>Este sitio web tiene una naturaleza estrictamente educativa. No constituye una actividad mercantil ni representa a ninguna empresa, operador de telefonía, marca o proveedor de servicios de recarga. Toda la información publicada es de libre consulta y su único fin es contribuir a un uso más informado y seguro de las recargas de teléfono móvil.</p>
         </section>
     </main>
 </div>
@@ -1087,22 +1081,22 @@ footer a:hover { color: var(--accent-orange); }
             <div class="grid-2">
                 <div class="card">
                     <h3>Nuestra Misión</h3>
-                    <p>Difundir, de manera clara, accesible y gratuita, contenidos educativos que orienten a los hogares colombianos sobre el cuidado y mantenimiento de los extintores domésticos, promoviendo la cultura de prevención, la seguridad familiar y la respuesta oportuna ante emergencias por incendio, sin recurrir a actividades comerciales ni a la captación de datos personales.</p>
+                    <p>Difundir, de manera clara, accesible y gratuita, contenidos educativos que orienten a los usuarios colombianos sobre cómo realizar, verificar y proteger las recargas de teléfono móvil, promoviendo la seguridad en las transacciones cotidianas y el control del saldo, sin recurrir a actividades comerciales ni a la captación de datos personales.</p>
                 </div>
                 <div class="card">
                     <h3>Nuestra Visión</h3>
-                    <p>Ser para el año 2030 una guía educativa de referencia en línea para las familias colombianas que desean proteger su hogar mediante el uso adecuado de extintores, reconocida por la sencillez, claridad y veracidad de sus consejos, así como por su firme compromiso con la educación en seguridad y prevención ciudadana.</p>
+                    <p>Ser para el año 2030 una guía educativa de referencia en línea para las personas que desean manejar con mayor seguridad y conocimiento sus recargas de saldo móvil, reconocida por la sencillez, claridad y veracidad de sus consejos, así como por su firme compromiso con la educación ciudadana en el uso responsable de los servicios de telefonía.</p>
                 </div>
             </div>
 
             <h3>Nuestros Valores</h3>
             <ul>
-                <li><strong>Educación:</strong> creemos en el poder transformador del conocimiento como herramienta para salvar vidas.</li>
-                <li><strong>Prevención:</strong> promovemos una cultura familiar basada en la anticipación y no en la reacción.</li>
+                <li><strong>Educación:</strong> creemos en el poder transformador del conocimiento como herramienta para evitar errores y fraudes.</li>
+                <li><strong>Prevención:</strong> promovemos una cultura basada en la verificación y la precaución antes de autorizar pagos.</li>
                 <li><strong>Transparencia:</strong> publicamos información clara, verificable y de utilidad práctica.</li>
                 <li><strong>Gratuidad:</strong> el acceso a este sitio es y será siempre completamente libre y sin costo.</li>
                 <li><strong>Privacidad:</strong> no recolectamos datos personales de nuestros visitantes.</li>
-                <li><strong>Independencia:</strong> no representamos intereses comerciales, políticos ni gremiales.</li>
+                <li><strong>Independencia:</strong> no representamos intereses comerciales, políticos ni de operadores específicos.</li>
             </ul>
 
             <div class="info-box">
@@ -1123,11 +1117,11 @@ footer a:hover { color: var(--accent-orange); }
             <div class="responsable-box">
                 <strong>Responsable del tratamiento de los datos:</strong>
                 <p style="margin-top: 0.6rem;">
-                    <strong>Nombre:</strong> David Steven Cuadros Serna<br>
-                    <strong>NIT:</strong> 1.037.615.503-1<br>
-                    <strong>Dirección:</strong> Calle 74 #65-66, Barranquilla, Atlántico, Colombia<br>
-                    <strong>Correo electrónico de contacto:</strong> wilsonardila1090@gmail.com<br>
-                    <strong>Teléfono:</strong> 3150011973
+                    <strong>Nombre:</strong> Luis Alejandro Arango Barrios<br>
+                    <strong>NIT:</strong> 8.743.951-1<br>
+                    <strong>Dirección:</strong> Cra 26a #76-42, Barranquilla, Atlántico, Colombia<br>
+                    <strong>Correo electrónico de contacto:</strong> luis.alejandroarango17@gmail.com<br>
+                    <strong>Teléfono:</strong> 3505348622
                 </p>
             </div>
 
@@ -1163,7 +1157,7 @@ footer a:hover { color: var(--accent-orange); }
             </ul>
 
             <h3>7. Canal de atención</h3>
-            <p>Para ejercer cualquiera de los derechos anteriores, presentar consultas, reclamos o solicitudes relacionadas con la presente política, el titular podrá comunicarse con el responsable a través del correo electrónico: <strong>wilsonardila1090@gmail.com</strong>.</p>
+            <p>Para ejercer cualquiera de los derechos anteriores, presentar consultas, reclamos o solicitudes relacionadas con la presente política, el titular podrá comunicarse con el responsable a través del correo electrónico: <strong>luis.alejandroarango17@gmail.com</strong>.</p>
 
             <h3>8. Uso de cookies</h3>
             <p>Este sitio no utiliza cookies de rastreo, análisis comercial ni publicidad personalizada.</p>
@@ -1192,11 +1186,11 @@ footer a:hover { color: var(--accent-orange); }
             <div class="responsable-box">
                 <strong>Responsable del sitio y del tratamiento de los datos:</strong>
                 <p style="margin-top: 0.6rem;">
-                    <strong>Nombre:</strong> David Steven Cuadros Serna<br>
-                    <strong>NIT:</strong> 1.037.615.503-1<br>
-                    <strong>Dirección:</strong> Calle 74 #65-66, Barranquilla, Atlántico, Colombia<br>
-                    <strong>Correo electrónico de contacto:</strong> wilsonardila1090@gmail.com<br>
-                    <strong>Teléfono:</strong> 3150011973
+                    <strong>Nombre:</strong> Luis Alejandro Arango Barrios<br>
+                    <strong>NIT:</strong> 8.743.951-1<br>
+                    <strong>Dirección:</strong> Cra 26a #76-42, Barranquilla, Atlántico, Colombia<br>
+                    <strong>Correo electrónico de contacto:</strong> luis.alejandroarango17@gmail.com<br>
+                    <strong>Teléfono:</strong> 3505348622
                 </p>
             </div>
 
@@ -1204,7 +1198,7 @@ footer a:hover { color: var(--accent-orange); }
             <p>El acceso y uso del presente sitio web implican la aceptación plena, expresa y sin reservas de los presentes Términos y Condiciones por parte del usuario.</p>
 
             <h3>2. Objeto del sitio</h3>
-            <p>Este sitio web tiene un fin <strong>exclusivamente educativo e informativo</strong>. Su contenido busca difundir información práctica sobre el cuidado y mantenimiento de extintores en casa. Bajo ninguna circunstancia constituye asesoría técnica, profesional, comercial ni de ingeniería en seguridad contra incendios.</p>
+            <p>Este sitio web tiene un fin <strong>exclusivamente educativo e informativo</strong>. Su contenido busca difundir información práctica sobre las recargas de teléfono móvil. Bajo ninguna circunstancia constituye asesoría técnica, profesional, comercial ni financiera.</p>
 
             <h3>3. Carácter no comercial</h3>
             <p>El sitio no realiza actividades comerciales, no vende productos ni servicios, no recibe pagos, no recolecta datos personales con fines comerciales y no realiza captación de clientes ni potenciales consumidores.</p>
@@ -1222,7 +1216,7 @@ footer a:hover { color: var(--accent-orange); }
             </ul>
 
             <h3>6. Limitación de responsabilidad</h3>
-            <p>El responsable del sitio actúa de buena fe y se esfuerza por mantener la información actualizada y precisa. Sin embargo, <strong>no garantiza</strong> que la información esté libre de errores u omisiones. La información publicada constituye orientación general; ante una emergencia real o duda técnica especializada, el usuario deberá acudir a profesionales certificados o a la línea de emergencia <strong>123</strong>.</p>
+            <p>El responsable del sitio actúa de buena fe y se esfuerza por mantener la información actualizada y precisa. Sin embargo, <strong>no garantiza</strong> que la información esté libre de errores u omisiones. La información publicada constituye orientación general; ante una duda específica sobre una transacción o servicio, el usuario deberá acudir a los canales oficiales del operador o de la entidad de pago correspondiente.</p>
 
             <h3>7. Enlaces a terceros</h3>
             <p>En caso de que el sitio incluya enlaces a sitios web de terceros, el responsable no se hace responsable del contenido, las políticas de privacidad ni las prácticas de dichos sitios externos.</p>
@@ -1234,13 +1228,13 @@ footer a:hover { color: var(--accent-orange); }
             <p>El responsable se reserva el derecho de modificar el contenido del sitio y los presentes Términos y Condiciones en cualquier momento, sin necesidad de aviso previo.</p>
 
             <h3>10. Tratamiento de datos</h3>
-            <p>Para conocer el tratamiento de los datos, el usuario podrá consultar la <a href="#politicas-privacidad" style="color: var(--accent-orange); text-decoration: underline;">Política de Privacidad</a>. El responsable del tratamiento de los datos personales es <strong>David Steven Cuadros Serna</strong>, identificado anteriormente.</p>
+            <p>Para conocer el tratamiento de los datos, el usuario podrá consultar la <a href="#politicas-privacidad" style="color: var(--accent-gold); text-decoration: underline;">Política de Privacidad</a>. El responsable del tratamiento de los datos personales es <strong>Luis Alejandro Arango Barrios</strong>, identificado anteriormente.</p>
 
             <h3>11. Legislación aplicable y jurisdicción</h3>
             <p>Los presentes Términos y Condiciones se rigen por las leyes de la <strong>República de Colombia</strong>. Cualquier controversia será resuelta ante los jueces competentes de la ciudad de Barranquilla, Atlántico, salvo que la ley disponga otra cosa.</p>
 
             <h3>12. Contacto</h3>
-            <p>Para cualquier consulta relacionada con estos Términos y Condiciones, puede comunicarse al correo: <strong>wilsonardila1090@gmail.com</strong>.</p>
+            <p>Para cualquier consulta relacionada con estos Términos y Condiciones, puede comunicarse al correo: <strong>luis.alejandroarango17@gmail.com</strong>.</p>
 
             <div class="info-box">
                 <strong>Constancia:</strong> Al continuar navegando en este sitio, el usuario manifiesta haber leído, entendido y aceptado los presentes Términos y Condiciones, así como la Política de Privacidad publicada.
@@ -1256,11 +1250,11 @@ footer a:hover { color: var(--accent-orange); }
             <h4>Identificación del Anunciante y Responsable</h4>
             <p>Esta página web es una guía educativa de carácter no comercial. El anunciante, responsable de la página web y responsable del tratamiento de los datos es:</p>
             <p style="margin-top: 0.8rem;">
-                <strong>David Steven Cuadros Serna</strong><br>
-                NIT: 1.037.615.503-1<br>
-                Calle 74 #65-66, Barranquilla, Atlántico — Colombia<br>
-                Correo: wilsonardila1090@gmail.com<br>
-                Teléfono: 3246365509
+                <strong>Luis Alejandro Arango Barrios</strong><br>
+                NIT: 8.743.951-1<br>
+                Cra 26a #76-42, Barranquilla, Atlántico — Colombia<br>
+                Correo: luis.alejandroarango17@gmail.com<br>
+                Teléfono: 3505348622
             </p>
         </div>
         <div>
@@ -1280,8 +1274,9 @@ footer a:hover { color: var(--accent-orange); }
         </div>
     </div>
     <div class="footer-bottom">
-        <p>© 2026 David Steven Cuadros Serna · Todos los derechos reservados</p>
+        <p>© 2026 Luis Alejandro Arango Barrios · Todos los derechos reservados</p>
         <p>Sitio educativo · Sin fines comerciales · Sin captación de datos personales</p>
+        <p>recargaconfiable.online</p>
     </div>
 </footer>
 
@@ -1290,11 +1285,11 @@ footer a:hover { color: var(--accent-orange); }
     var validPages = ['inicio', 'sobre-nosotros', 'mision-vision', 'politicas-privacidad', 'terminos-condiciones'];
 
     var titles = {
-        'inicio': 'David Steven Cuadros Serna',
-        'sobre-nosotros': 'David Steven Cuadros Serna · Sobre Nosotros',
-        'mision-vision': 'David Steven Cuadros Serna · Misión y Visión',
-        'politicas-privacidad': 'David Steven Cuadros Serna · Políticas y Privacidad',
-        'terminos-condiciones': 'David Steven Cuadros Serna · Términos y Condiciones'
+        'inicio': 'Luis Alejandro Arango Barrios',
+        'sobre-nosotros': 'Luis Alejandro Arango Barrios · Sobre Nosotros',
+        'mision-vision': 'Luis Alejandro Arango Barrios · Misión y Visión',
+        'politicas-privacidad': 'Luis Alejandro Arango Barrios · Políticas y Privacidad',
+        'terminos-condiciones': 'Luis Alejandro Arango Barrios · Términos y Condiciones'
     };
 
     function showPage(pageId) {
@@ -1334,9 +1329,5 @@ footer a:hover { color: var(--accent-orange); }
 })();
 </script>
 
-<script src=“https://challenges.cloudflare.com/turnstile/v0/api.js”
-
-        async defer></script>
-
-        
-</body></html>
+</body>
+</html>
